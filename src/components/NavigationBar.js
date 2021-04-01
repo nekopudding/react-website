@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar, Image, Row, Col, Container, Card } from 'react-bootstrap';
+import { Nav, Navbar, Card } from 'react-bootstrap';
 import styled from 'styled-components';
 
 //importing images
@@ -23,11 +23,11 @@ const Styles = styled.div`
       filter: none;
     }
   }
-  .navbar .navbar-brand {
+  a, .navbar .nav-link .navbar-brand {
     text-color: black;
     filter: none;
-
   }
+
   .navbar .card {
     width: 50px; 
     border-width: 10px;
@@ -52,17 +52,17 @@ export const NavigationBar = () => (
         </Link>
       </Nav.Link>
       <Card border='white'>
-        <a href='https://www.facebook.com/dean.y.ca/' target='_blank'>
+        <a href='https://www.facebook.com/dean.y.ca/' target='_blank' rel="noreferrer">
           <Card.Img variant='top' src={facebook}/>
         </a>
       </Card>
       <Card border='white'>
-        <a href='https://github.com/nekopudding' target='_blank'>
+        <a href='https://github.com/nekopudding' target='_blank' rel="noreferrer">
           <Card.Img variant='top' src={github}/>
         </a>
       </Card>
       <Card border='white'>
-        <a href='https://www.linkedin.com/in/dean-yang-438663189/' target='_blank'>
+        <a href='https://www.linkedin.com/in/dean-yang-438663189/' target='_blank' rel="noreferrer">
           <Card.Img variant='top' src={linkedin}/>
         </a>
       </Card>
