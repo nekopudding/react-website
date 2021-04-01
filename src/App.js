@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './Home';
+import { Experiences } from './Experiences';
 import { About } from './About';
 import { Contact } from './Contact';
-import { NoMatch } from './NoMatch';
+import { Projects } from './Projects';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
+
 
 //using React.Fragment just explicitly wraps everything as html
 class App extends Component {
@@ -18,10 +19,11 @@ class App extends Component {
           <Jumbotron />
           <Layout>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
+              <Route exact path="/about" component={About} /> {/*Route defines routes */}
+              <Route path="/projects" component={Projects} />
+              <Route path='/experiences' component={Experiences} />
               <Route path="/contact" component={Contact} />
-              <Route component={NoMatch} />
+              <Route component={About} />
             </Switch>
           </Layout>
         </Router>

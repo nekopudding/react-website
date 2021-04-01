@@ -1,16 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Image, Row, Col, Container, Card } from 'react-bootstrap';
 import styled from 'styled-components';
+
+//importing images
+import facebook from '../assets/facebook.png'
+import github from '../assets/github.png'
+import linkedin from '../assets/linkedin.png'
 
 const Styles = styled.div`
   .navbar {
-    background-color: #222;
+    background-color: #FFFFFF;
   }
-  a, .navbar-brand, .navbar-nav .nav-link {
-    color: #bbb;
+  a, .navbar-nav .nav-link {
+    color: black;
+    text-decoration: none;
+    text-style: bold;
+    font-weight: 700;
+    filter: opacity(50%);
+
     &:hover {
-      color: white;
+      filter: none;
+    }
+  }
+  .navbar .navbar-brand {
+    text-color: black;
+    filter: none;
+
+  }
+  .navbar .card {
+    width: 50px; 
+    border-width: 10px;
+    filter: opacity(50%);
+
+    &:hover {
+      filter: none;
     }
   }
 `;
@@ -22,18 +46,38 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Code Life</Navbar.Brand>
+      <Navbar.Brand href="/">Nekopudding's Personal Website</Navbar.Brand>
+      <Card border='white'>
+        <a href='https://www.facebook.com/dean.y.ca/' target='_blank'>
+          <Card.Img variant='top' src={facebook}/>
+        </a>
+      </Card>
+      <Card border='white'>
+        <a href='https://github.com/nekopudding' target='_blank'>
+          <Card.Img variant='top' src={github}/>
+        </a>
+      </Card>
+      <Card border='white'>
+        <a href='https://www.linkedin.com/in/dean-yang-438663189/' target='_blank'>
+          <Card.Img variant='top' src={linkedin}/>
+        </a>
+      </Card>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
             <Nav.Link>
-              <Link to="/">Home</Link>
+              <Link to="/">About</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/about">About</Link>
+              <Link to="/projects">Projects</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/experiences">Work Experiences</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -43,6 +87,7 @@ export const NavigationBar = () => (
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
+      
     </Navbar>
   </Styles >
 )
