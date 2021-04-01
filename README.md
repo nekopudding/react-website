@@ -1,3 +1,12 @@
+### Site Notes
+Built using react-router, styled componenets, react-bootstrap
+
+Tutorial used for Site Setup:
+https://www.youtube.com/watch?v=tOK9l5uP06U
+
+Tutorial Used for Deployment
+https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +77,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
