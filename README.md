@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=tOK9l5uP06U
 
 Tutorial Used for Deployment
 https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+Deploy site updates using `npm run deploy`
 
 Site deployed on http://nekopudding.github.io/react-website
 
