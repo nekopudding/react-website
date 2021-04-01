@@ -46,7 +46,11 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Nekopudding's Personal Website</Navbar.Brand>
+      <Nav.Link>
+        <Link to="/">
+          <Navbar.Brand>Nekopudding's Personal Website</Navbar.Brand>
+        </Link>
+      </Nav.Link>
       <Card border='white'>
         <a href='https://www.facebook.com/dean.y.ca/' target='_blank'>
           <Card.Img variant='top' src={facebook}/>

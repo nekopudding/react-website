@@ -19,7 +19,7 @@ class App extends Component {
           <Jumbotron />
           <Layout>
             <Switch>
-              <Route exact path="/about" component={About} /> {/*Route defines routes */}
+              <Route exact path="/" component={About} /> {/*Route defines routes */}
               <Route path="/projects" component={Projects} />
               <Route path='/experiences' component={Experiences} />
               <Route path="/contact" component={Contact} />
