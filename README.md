@@ -1,5 +1,5 @@
 # Site Notes
-Built using react-router, styled componenets, react-bootstrap
+Built using react-router, styled components, react-bootstrap
 
 Tutorial used for Site Setup:
 https://www.youtube.com/watch?v=tOK9l5uP06U
