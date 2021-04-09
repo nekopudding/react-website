@@ -11,6 +11,7 @@ import linkedin from '../assets/linkedin.png'
 const Styles = styled.div`
   .navbar {
     background-color: #FFFFFF;
+    padding-right: 40px;
   }
   a, .navbar-nav .nav-link {
     color: black;
@@ -47,7 +48,7 @@ export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
       <Nav.Link>
-        <Link to="/">
+        <Link to="/react-website/">
           <Navbar.Brand>Nekopudding's Personal Website</Navbar.Brand>
         </Link>
       </Nav.Link>
@@ -71,22 +72,22 @@ export const NavigationBar = () => (
         <Nav className="ml-auto">
           <Nav.Item>
             <Nav.Link>
-              <Link to="/">About</Link>
+              <Link to="/react-website/">About</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/projects">Projects</Link>
+              <Link to="/react-website/projects">Projects</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/experiences">Work Experiences</Link>
+              <Link to="/react-website/blog">Blog</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/react-website/contact">Contact</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>

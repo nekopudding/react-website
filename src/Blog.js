@@ -12,40 +12,51 @@ const Styles = styled.div`
     height: auto;
     padding-bottom: 150px;
     margin-bottom: 70px;
-    background: #fffcf5;
   }
-
+  table {
+  }
+  td, th {
+    padding: 0px 40px;
+    text-align: left;
+    width: 50%;
+  }
   h2 {
     font-weight: 800;
     padding: 30px;
-    background: #f2bd72;
+    background: #727df2;
     border-radius: 10px;
     margin: 10px;
   }
-  p {
-    margin 20px;
-    margin-left: 300px;
-    margin-right: 50px;
-    text-align: justify;
+  b {
+    padding-left: 40px;
+    margin: 10px;
+  }
+  ul {
+    list-style-type: bullet;  
+    & li a {
+      color: black;
+      text-decoration: none;
 
+      &:hover {
+        filter: opacity(50%);
+      }
+    }
   }
 
-  span {
-    width: 1px;
-    height: 1px;
-    margin-left: 30px;
-    margin-top: 10px;
-    background: black;
+  li {
+    margin: 20px;
+  }
+  .r {
+    text-align: right;
   }
 `;
 
 
 
-export const Projects = () => (
+export const Blog = () => (
   <Styles>
     <Card border='black'>
-      <h2>Projects</h2>
-      
+      <h2>Blog</h2>
     </Card>
   </Styles>
 )

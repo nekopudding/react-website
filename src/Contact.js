@@ -1,16 +1,17 @@
 import React from 'react'
-import { Card, Image } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import styled from 'styled-components';
 
 //images
 
 //changes will only apply after reloading the webpage
 const Styles = styled.div`
-
   .card {
     border-width: 1px;
-    height: 600px;
-    margin-bottom: 100px;
+    height: auto;
+    padding-bottom: 150px;
+    margin-bottom: 70px;
+    background: #fffcf5;
   }
 
   h2 {
@@ -20,30 +21,44 @@ const Styles = styled.div`
     border-radius: 10px;
     margin: 10px;
   }
-  p {
-    margin 20px;
-    margin-left: 300px;
-    margin-right: 50px;
-    text-align: justify;
+  b {
+    padding-left: 40px;
+    margin: 10px;
+  }
+  ul {
+    list-style-type: none;  
+    & li a {
+      color: black;
+      text-decoration: none;
 
+      &:hover {
+        filter: opacity(50%);
+      }
+    }
   }
 
-  span {
-    width: 1px;
-    height: 1px;
-    margin-left: 30px;
-    margin-top: 10px;
-    background: black;
+  li {
+    margin: 20px;
   }
+  
 `;
 
 
 
 export const Contact = () => (
   <Styles>
+    <body>
     <Card border='black'>
       <h2>Contact</h2>
-      
+      <ul>
+        <li><b>Email: </b><span>deany.y.ca@gmail.com</span></li>
+        <li><b>Socials: </b></li>
+          <ul>
+            <li><a href='https://www.facebook.com/dean.y.ca/'><b>Facebook:</b><span>https://www.facebook.com/dean.y.ca/</span></a></li>
+            <li><a href='https://www.linkedin.com/in/dean-yang-438663189/'><b>Linkedin: </b><span>https://www.linkedin.com/in/dean-yang-438663189/</span></a></li>
+          </ul>      
+      </ul>
     </Card>
+    </body>
   </Styles>
 )

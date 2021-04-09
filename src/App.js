@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Experiences } from './Experiences';
+import { Blog } from './Blog';
 import { About } from './About';
 import { Contact } from './Contact';
 import { Projects } from './Projects';
@@ -19,10 +19,10 @@ class App extends Component {
           <Jumbotron />
           <Layout>
             <Switch>
-              <Route exact path="/" component={About} /> {/*Route defines routes */}
-              <Route path="/projects" component={Projects} />
-              <Route path='/experiences' component={Experiences} />
-              <Route path="/contact" component={Contact} />
+              <Route exact path="/react-website/" component={About} /> {/*Route defines routes */}
+              <Route path="/react-website/projects" component={Projects} />
+              <Route path='/react-website/blog' component={Blog} />
+              <Route path="/react-website/contact" component={Contact} />
               <Route component={About} />
             </Switch>
           </Layout>

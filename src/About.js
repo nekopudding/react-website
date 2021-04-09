@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import styled from 'styled-components';
 
 //images
@@ -10,8 +10,10 @@ const Styles = styled.div`
 
   .card {
     border-width: 1px;
-    height: 600px;
-    margin-bottom: 100px;
+    height: auto;
+    padding-bottom: 150px;
+    margin-bottom: 70px;
+    background: #fffcf5;
   }
 
   h2 {
@@ -23,9 +25,10 @@ const Styles = styled.div`
   }
   p {
     margin 20px;
-    margin-left: 300px;
+    margin-left: 50px;
     margin-right: 50px;
     text-align: justify;
+    display: inline;
 
   }
 
@@ -36,6 +39,16 @@ const Styles = styled.div`
     margin-top: 10px;
     background: black;
   }
+
+  img {
+    object-fit: contain;
+    width: 20%;
+    height: 20%;
+    margin: 3%;
+    margin-left: 6%;
+    display: inline;
+    border-radius: 50%;
+  }
 `;
 
 
@@ -44,9 +57,7 @@ export const About = () => (
   <Styles>
     <Card border='black'>
       <h2>About Me</h2>
-      <span>
-        <Image src={profilepic} roundedCircle></Image>
-      </span>
+      <img src={profilepic} alt='profilepic'></img>
       
       <p>I am a 2nd year undergraduate student at UBC seeking a degree 
         in Computer Engineering. As you can probably tell from my profile 
