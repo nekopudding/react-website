@@ -13,7 +13,7 @@ const Styles = styled.div`
     height: auto;
     padding-bottom: 150px;
     margin-bottom: 70px;
-    background: #fffcf5;
+    background: #fafeff;
   }
 
   h2 {

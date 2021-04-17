@@ -1,4 +1,4 @@
-# Site Notes Overview
+## Site Notes Overview
 Built using react-router, styled components, react-bootstrap
 
 Tutorial used for Site Setup:
@@ -12,6 +12,11 @@ To test changes locally, use `yarn start`
 Deploy site updates using `npm run deploy`
 
 Site deployed on http://nekopudding.github.io/react-website  
+
+## Dev Notes
+Link to blog page is removed for now as I don't have any plans for making a blog.
+
+
 
 
 ## React App Setup

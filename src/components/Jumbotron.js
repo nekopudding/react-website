@@ -9,21 +9,25 @@ const Styles = styled.div`
     background: url(${bgImage}) no-repeat fixed bottom;
     background-size: cover;
     color: #ccc;
-    height: 200px;
+    height: 280px;
     position: relative;
     z-index: -2;
   }
 
   .overlay {
     background-color: #000;
-    opacity: 0.6;
-    positioin: absolute;
+    opacity: 0.2;
+    //position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: -1;
 
+  }
+
+  h1 {
+    margin-top: 80px;
   }
 `;
 
