@@ -40,6 +40,9 @@ const Styles = styled.div`
   li {
     margin: 20px;
   }
+  a {
+    word-break: break-all;
+  }
   
 `;
 

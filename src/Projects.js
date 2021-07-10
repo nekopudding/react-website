@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import styled from 'styled-components';
 
 //images
@@ -18,6 +18,7 @@ const Styles = styled.div`
 
   table {
     table-layout: fixed;
+    width: 100%;
   }
 
   h2 {
@@ -42,38 +43,43 @@ const Styles = styled.div`
   }
 
   th {
-    width: 67%;
+    width: 800px;
     font-size: 19.2px;
     text-style: bold;
     font-weight: 700;
     text-align: left;
 
     padding: 0 2% 0;
-    
   }
 
   a {
     text-decoration: none;
     color: black;
     &:hover {
-      filter: opacity(50%);
+      color: grey;
+      text-decoration: underline;
     }
   }
   
   .date {
     text-align: right;
-    padding-right: 4%;
+    padding-right: 2%;
+    width: 300px;
   }
 
   p, pre {
     padding: 2% 6%;
     text-align: left;
     margin: 0;
+    width: 100%;
 
     display: block;
     font-family: arial;
     font-size: 1em;
-
+    
+  }
+  #brk {
+    word-break: break-all;
   }
 `;
 
@@ -96,13 +102,21 @@ export const Projects = () => (
           </tr>
         </div>
         <div className='entries'>
+          <tr>
+            <th><a href='https://nekopudding.itch.io/health-rpg' target='_blank' rel="noreferrer">HealthRPG</a></th>
+            <th className='date'>Summer 2021</th>
+          </tr>
+          <tr>
+            <p>HealthRPG is a self-care turn based combat real world exploration game inspired by Pokemon Go made for the 2021 Hack4Health hackathon event</p>
+          </tr>
+        </div>
         <div className='entries'>
           <tr>
-            <th><a href='' target='_blank' rel="noreferrer">Personal Website</a></th>
+            <th><a href='#top' rel="noreferrer">Personal Website</a></th>
             <th className='date'>Spring 2021</th>
           </tr>
           <tr>
-            <p>The creation of this website, source code: <a href='https://github.com/nekopudding/react-website' target='_blank' rel="noreferrer">https://github.com/nekopudding/react-website</a></p>
+            <p>The creation of this website, source code: <a id='brk' href='https://github.com/nekopudding/react-website' target='_blank' rel="noreferrer">https://github.com/nekopudding/react-website</a></p>
           </tr>
         </div>
         <div className='entries'>
@@ -165,12 +179,9 @@ export const Projects = () => (
             <th className='date'></th>
           </tr>
           <tr>
-            <p>Create a sudoku solver using a depth first search algorithm.</p>
-            <p>Using this method, the solution will be found in a brute force method. Other more optimal methods of solving can be explored on:</p>
-            <p><a>https://en.wikipedia.org/wiki/Sudoku_solving_algorithms</a></p>
+            <p>Create a sudoku solver using a depth first search algorithm. Using this method, the solution will be found in a brute force method. Other more optimal methods of solving can be explored <a href='https://en.wikipedia.org/wiki/Sudoku_solving_algorithms' target='_blank' rel="noreferrer">here</a></p>
           </tr>
         </div>
-
         <div className='entries'>
           <tr>
             <th>AI Simulations</th>
@@ -178,8 +189,7 @@ export const Projects = () => (
           </tr>
           <tr>
             <p>Create AI simulations of real life problems. This may be a bit advanced, it would be a good idea to start with simulations of simpler systems.</p>
-            <p>Inspired by: </p>
-            <p><a>https://www.youtube.com/watch?v=Sr2ga3BBMTc</a></p>
+            <p>Inspired by <a href='https://www.youtube.com/watch?v=Sr2ga3BBMTc' target='_blank' rel="noreferrer">Two Minute Papers</a></p>
           </tr>
         </div>
 
