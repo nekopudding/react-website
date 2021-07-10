@@ -103,15 +103,6 @@ export const Projects = () => (
         </div>
         <div className='entries'>
           <tr>
-            <th><a href='https://nekopudding.itch.io/health-rpg' target='_blank' rel="noreferrer">HealthRPG</a></th>
-            <th className='date'>Summer 2021</th>
-          </tr>
-          <tr>
-            <p>HealthRPG is a self-care turn based combat real world exploration game inspired by Pokemon Go made for the 2021 Hack4Health hackathon event</p>
-          </tr>
-        </div>
-        <div className='entries'>
-          <tr>
             <th><a href='#top' rel="noreferrer">Personal Website</a></th>
             <th className='date'>Spring 2021</th>
           </tr>
