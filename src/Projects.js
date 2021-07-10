@@ -88,11 +88,30 @@ export const Projects = () => (
         <h2>Projects</h2>
         <div className='entries'>
           <tr>
-            <th><a href='https://github.com/nekopudding/unity_sunnyland' target='_blank' rel="noreferrer">Sunnyland</a></th>
-            <th className='date'>Summer 2020 - Ongoing</th>
+            <th><a href='https://nekopudding.itch.io/health-rpg' target='_blank' rel="noreferrer">HealthRPG</a></th>
+            <th className='date'>Summer 2021</th>
           </tr>
           <tr>
-            <p>2D Plaformer created on Unity using the Sunnyland asset pack. Development is still in progress. Once finished, the game will be deployed on itch.io.</p>
+            <p>HealthRPG is a self-care turn based combat real world exploration game inspired by Pokemon Go made for the 2021 Hack4Health hackathon event</p>
+          </tr>
+        </div>
+        <div className='entries'>
+        <div className='entries'>
+          <tr>
+            <th><a href='' target='_blank' rel="noreferrer">Personal Website</a></th>
+            <th className='date'>Spring 2021</th>
+          </tr>
+          <tr>
+            <p>The creation of this website, source code: <a href='https://github.com/nekopudding/react-website' target='_blank' rel="noreferrer">https://github.com/nekopudding/react-website</a></p>
+          </tr>
+        </div>
+        <div className='entries'>
+          <tr>
+            <th><a href='https://nekopudding.itch.io/sunnyland' target='_blank' rel="noreferrer">Sunnyland</a></th>
+            <th className='date'>Summer 2020 - Summer 2021</th>
+          </tr>
+          <tr>
+            <p>2D Plaformer created on Unity using the Sunnyland asset pack</p>
           </tr>
         </div>
 
