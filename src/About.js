@@ -24,9 +24,7 @@ const Styles = styled.div`
     margin: 10px;
   }
   p {
-    margin 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin 20px 80px;
     text-align: justify;
     display: inline;
 
@@ -59,16 +57,16 @@ export const About = () => (
       <h2>About Me</h2>
       <img src={profilepic} alt='profilepic'></img>
       
-      <p>I am a 2nd year undergraduate student at UBC seeking a degree 
-        in Computer Engineering. As you can probably tell from my profile 
-        picture, I love games! From game design, to development, sound design, 
-        graphics, to playing. If it’s something that I’m passionate about, 
-        I’ll always put in 100% of my effort! Of course, I’m open to all kinds 
-        of things that will enhance my skills as a software engineer. Who knows, 
-        I might just stumble upon a new passion. So don’t hesitate to contact me 
-        if you are seeking new hires!</p>
+      <p>
+        I am a 2nd year undergraduate student at UBC majoring in Computer Engineering. 
+        Currently in Co-op and actively seeking internship. 
+        My passion is in game development, simulation, and machine learning.
+        I’m open to all kinds jobs in the software development field as well as other
+        opportunities to enhance my skills in graphics design/art/music composition and software. 
+        You can find my contact information on the Contact page, email is preferred.
+      </p>
 
-      <p>Aside from programming and gaming, playing the piano is also one of my hobbies.</p>
+      <p>More of my works as well as ongoing projects can be found on my github page.</p>
     </Card>
   </Styles>
 )
