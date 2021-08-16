@@ -91,7 +91,7 @@ export const Projects = () => (
     <Card border='black'>
       
       <table>
-        <h2>Projects</h2>
+        <h2>Coding Projects</h2>
         <div className='entries'>
           <tr>
             <th><a href='https://nekopudding.itch.io/health-rpg' target='_blank' rel="noreferrer">HealthRPG</a></th>

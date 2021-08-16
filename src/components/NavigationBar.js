@@ -126,6 +126,12 @@ export const NavigationBar = () => {
 
           <Nav.Item>
             <Nav.Link>
+              <Link to="/react-website/works">Works</Link>
+            </Nav.Link>
+          </Nav.Item>
+
+          <Nav.Item>
+            <Nav.Link>
               <Link to="/react-website/contact">Contact</Link>
             </Nav.Link>
           </Nav.Item>
