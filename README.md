@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=tOK9l5uP06U
 Tutorial Used for Deployment
 https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
-Site deployed on http://nekopudding.github.io/react_website  
+Site deployed on http://nekopudding.github.io/react-website  
 
 ### Modifying Code On a New Computer
 
