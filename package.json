@@ -1,6 +1,6 @@
 {
-  "homepage": "http://nekopudding.github.io/react-website",
-  "name": "react-website",
+  "homepage": "http://nekopudding.github.io/react_website",
+  "name": "react_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
